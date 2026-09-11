@@ -14,7 +14,7 @@
     <!--Responsive Navbar-->
     <Nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">Greenden</h1>
-        <svg class="w-6 h-6 md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+        <svg id="menuicon" class="w-6 h-6 cursor-pointer md:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
             strokeWidth={1.5} stroke="currentColor" className="size-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -31,6 +31,23 @@
             </li>
         </ul>
     </Nav>
+
+    <section id="sidenav" class="bg-green-100 z-10 fixed h-screen transition-all duration-1000 w-1/2 top-0 " style="right: -50%;" >
+        <div class="text-right p-10">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center  text-gray-600 ">
+        <li>
+            <a class="hover:underline hover:text-black cursor-pointer" href="index.html">Home</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black cursor-pointer" href="Product.html">Product</a>
+        </li>
+        <li>
+            <a class="hover:underline hover:text-black cursor-pointer" href="contact.html">Contact</a>
+        </li>
+    </ul>
+    </section>
 
     <section class="bg-white dark:bg-gray-900">
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
@@ -73,3 +90,4 @@
         <p>The standard chunk of lorem ipsum used since 1500s is reproduced below for those interest</p>
         <p>@ 2021 Greenden.com</p>
     </section>
+    <script src="contact.js"></script>
